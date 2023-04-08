@@ -1,0 +1,25 @@
+.planScreen {
+  margin-top: 10px;
+}
+
+.planScreen__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.planScreen__detail > h4,
+h4,
+h4 {
+  font-size: 15px;
+  padding: 2px;
+}
+
+.planScreen__button {
+  justify-items: left;
+  margin-left: 30px;
+  background-color: #e50914;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 15px;
+}
