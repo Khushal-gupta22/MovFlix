@@ -3,7 +3,7 @@ import axios from "./axios";
 import "./Banner.css";
 import requests from "./Requests";
 
-const Banner = () => {
+const Banner = ({ fetchNetflixOrignals }) => {
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Banner = () => {
       return request;
     }
     fetchData();
-  }, []);
+  }, [fetchNetflixOrignals]);
 
   // console.log(movie);
 
@@ -27,11 +27,13 @@ const Banner = () => {
 
   return (
     <header
-      className=" relative h-96 object-contain text-white"
+      className="banner"
       style={{
         backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-        backgroundPositin: "center center",
+
+        backgroundPosition: "center center",
+        objectFit: "contain",
       }}
     >
       <div className="ml-8 h-48 pt-40">
