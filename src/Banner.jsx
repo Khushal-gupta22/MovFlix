@@ -29,11 +29,10 @@ const Banner = ({ fetchNetflixOrignals }) => {
     <header
       className="banner"
       style={{
-        backgroundSize: "cover",
+        // backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
 
         backgroundPosition: "center center",
-        objectFit: "contain",
       }}
     >
       <div className="ml-8 h-48 pt-40">
