@@ -39,9 +39,10 @@ const LoginScreen = () => {
                     GET STARTED
                   </button>
                 </form>
-                <span> sample login: 
-                  <span>
-                  email - abcd@gmail.com || Password: 123456</span>
+                <span>
+                  {" "}
+                  Sample login details: <br />
+                  <span>Email: abcd@gmail.com || passowrd: 123456</span>
                 </span>
               </div>
             </>
